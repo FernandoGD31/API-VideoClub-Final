@@ -2,14 +2,14 @@ $(document).ready(function() {
     $.ajax({
         type: "GET",
         url: "php/mostrarDirector.php",
- 
+
         success: function(response) {
             let datos = JSON.parse(response);
             let grid = document.querySelector('#container')
             grid.innerHTML = "";
 
             for (const item of datos) {
-               
+
                 grid.innerHTML += `
 
                 <div class="container mt-5">

@@ -72,7 +72,7 @@ include('header.php');
         <table class="table table-dark table-bordered">
             <thead>
                 <tr>
-                    <th scope="col"></th>
+                    <th scope="col">URL Raiz: http://31.220.62.39/API/VIDEOCLUB/public/</th>
                     <th scope="col"></th>
                     <th scope="col" class="h3 p-3">Servicios de la API VideoClub</th>
                     <th scope="col"></th>
@@ -122,7 +122,7 @@ include('header.php');
             </tr>
 
             <tr>
-                <td>/EliminarContenido/{id}</td>
+                <td>/EliminarContenido/id</td>
                 <td>GET</td>
                 <td>ID de contenido</td>
                 <td>Eliminar el registro del contenido</td>
@@ -136,7 +136,7 @@ include('header.php');
             </tr>
 
             <tr>
-                <td>/MostrarContenido/{nombreContenido}</td>
+                <td>/MostrarContenido/nombreContenido</td>
                 <td>GET</td>
                 <td>Nombre</td>
                 <td>Muestra la información del contenido al pasar el nombre de este como parámetro</td>
@@ -157,21 +157,21 @@ include('header.php');
             </tr>
 
             <tr>
-                <td>/GeneroPelicula/{genero}</td>
+                <td>/GeneroPelicula/genero</td>
                 <td>GET</td>
                 <td>Genero</td>
                 <td>Muestra las películas por el género que se le pase por parámetro</td>
             </tr>
 
             <tr>
-                <td>/GeneroSeries/{genero}</td>
+                <td>/GeneroSeries/genero</td>
                 <td>GET</td>
                 <td>Genero</td>
                 <td>Muestra las series por el genero que se le pase por parámetro</td>
             </tr>
 
             <tr>
-                <td>/Calificacion/{nombreContenido}</td>
+                <td>/Calificacion/nombreContenido</td>
                 <td>GET</td>
                 <td>Nombre </td>
                 <td>Devuelve la calificación del contenido al pasarle el nombre</td>
@@ -186,14 +186,14 @@ include('header.php');
             </tr>
 
             <tr>
-                <td>/EliminarDirector/{id}</td>
+                <td>/EliminarDirector/id</td>
                 <td>GET</td>
                 <td>ID del director</td>
                 <td>Elimina el registro de un director segun el id que se le pase</td>
             </tr>
 
             <tr>
-                <td>/EliminarActor/{id}</td>
+                <td>/EliminarActor/id</td>
                 <td>GET</td>
                 <td>ID del Actor</td>
                 <td>Elimina el registro de un Actor segun el id que se le pase</td>
@@ -236,28 +236,28 @@ include('header.php');
 <!--  -->
 
             <tr>
-                <td>/Director/{nombreContenido}</td>
+                <td>/Director/nombreContenido</td>
                 <td>GET</td>
                 <td>Nombre </td>
                 <td>Devuelve la información del director al pasarle el nombre del contenido</td>
             </tr>
 
             <tr>
-                <td>/Actor/{nombreContenido}</td>
+                <td>/Actor/nombreContenido</td>
                 <td>GET</td>
                 <td>Nombre</td>
                 <td>Devuelve los actores del contenido al pasarle el nombre de este</td>
             </tr>
 
             <tr>
-                <td>/sinopsis/{nombreContenido}</td>
+                <td>/sinopsis/nombreContenido</td>
                 <td>GET</td>
                 <td>Nombre</td>
                 <td>Devuelve la sinopsis del contenido</td>
             </tr>
 
             <tr>
-                <td>/NumeroTemporadas/{nombreContenido}</td>
+                <td>/NumeroTemporadas/nombreContenido</td>
                 <td>GET</td>
                 <td>Nombre</td>
                 <td>Devuelve el numero de temporadas y el total de capítulos si es una serie al pasar el nombre</td>
@@ -271,14 +271,14 @@ include('header.php');
             </tr>
 
             <tr>
-                <td>/Peliculas/{idioma}</td>
+                <td>/Peliculas/idioma</td>
                 <td>GET</td>
                 <td></td>
                 <td>Devuelve las películas en el idioma que se le pase</td>
             </tr>
 
             <tr>
-                <td>/Series/{idioma}</td>
+                <td>/Series/idioma</td>
                 <td>GET</td>
                 <td></td>
                 <td>Devuelve las series en el idioma que se le pase</td>
@@ -299,7 +299,7 @@ include('header.php');
             </tr>
 
             <tr>
-                <td>/EditarCliente/{id}</td>
+                <td>/EditarCliente/id</td>
                 <td>POST</td>
                 <td>Nombre,
                     Apellido paterno,
@@ -313,7 +313,7 @@ include('header.php');
             </tr>
 
             <tr>
-                <td>/EliminarCliente/{id}</td>
+                <td>/EliminarCliente/id</td>
                 <td>GET</td>
                 <td>ID de contenido</td>
                 <td>Elimina clientes</td>
@@ -325,13 +325,13 @@ include('header.php');
                 <td>Muestra los clientes registrados </td>
             </tr>
             <tr>
-                <td>/MostrarCliente/{nombreCliente}</td>
+                <td>/MostrarCliente/nombreCliente</td>
                 <td>GET</td>
                 <td>Nombre</td>
                 <td>Muestra toda la información de un cliente según el id de registro que se pase</td>
             </tr>
             <tr>
-                <td>/RentaContenido/{id_pago}/{id_contenido}</td>
+                <td>/RentaContenido/id_pago/id_contenido</td>
                 <td>POST</td>
                 <td>Id de cliente
                     Id de contenido
@@ -342,13 +342,13 @@ include('header.php');
                 <td>Devuelve el URL del contenido al después de validar la película y el cobro</td>
             </tr>
             <tr>
-                <td>/ContenidoRentado/{id_cliente}</td>
+                <td>/ContenidoRentado/id_cliente</td>
                 <td>GET</td>
                 <td>Id cliente</td>
                 <td>Devuelve una lista de contenido rentado por un cliente</td>
             </tr>
             <tr>
-                <td>/cantidadGastada/{id_cliente}</td>
+                <td>/cantidadGastada/id_cliente</td>
                 <td>GET</td>
                 <td>Id cliente</td>
                 <td>Devuelve la cantidad gastada en rentas por un cliente</td>

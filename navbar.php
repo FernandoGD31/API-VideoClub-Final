@@ -8,7 +8,7 @@
             <li class="nav-item active mr-5">
                 <a class="nav-link" href="index.php">Inicio </a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown mr-4">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true">
                     Contenido
                 </a>
@@ -19,7 +19,7 @@
                 </div>
             </li>
 
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown mr-4">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true">
                     Director
                 </a>
@@ -31,7 +31,7 @@
             </li>
 
 
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown mr-4">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true">
                     Actores
                 </a>
